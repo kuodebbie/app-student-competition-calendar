@@ -1,0 +1,16 @@
+{
+  "name": "全球學生競賽日程",
+  "short_name": "競賽日程",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#2563eb",
+  "description": "收集全世界適合Grade 3-12學生的競賽資訊，輕鬆追蹤並加入日曆。",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
