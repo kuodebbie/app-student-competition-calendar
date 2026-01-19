@@ -45,8 +45,9 @@
     <script src="competitions.js"></script>
     
     <script>
-        // Server IP for QR Code
-        window.SERVER_URL = "http://192.168.0.113:8000";
+        // Dynamic Server URL (Works for both Localhost and Cloud)
+        // Removes trailing slash if present
+        window.SERVER_URL = window.location.href.replace(/\/$/, "");
     </script>
 
     <!-- App Logic -->
