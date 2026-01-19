@@ -211,6 +211,18 @@ const App = () => {
                 </button>
             </header>
 
+            <div className="hidden md:flex mb-6 bg-white border border-slate-200 rounded-xl p-4 items-center justify-between">
+                <div className="text-sm">
+                    <div className="font-semibold text-slate-800">手機掃描 QR Code 開啟此網站</div>
+                    <div className="text-slate-500 mt-1 break-all">{SERVER_URL}</div>
+                </div>
+                <img
+                    src={`https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=${encodeURIComponent(SERVER_URL)}`}
+                    alt="QR Code"
+                    className="w-24 h-24"
+                />
+            </div>
+
             {/* QR Code Modal */}
             {showQRCode && (
                 <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4" onClick={() => setShowQRCode(false)}>
